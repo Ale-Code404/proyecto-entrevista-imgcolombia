@@ -1,0 +1,55 @@
+{
+  "resources/assets/img/template/login-office.jpeg": {
+    "file": "assets/login-office.d5ff382f.jpeg",
+    "src": "resources/assets/img/template/login-office.jpeg"
+  },
+  "resources/assets/img/template/login-office-dark.jpeg": {
+    "file": "assets/login-office-dark.0e1a7a62.jpeg",
+    "src": "resources/assets/img/template/login-office-dark.jpeg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app.defadeb3.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/components/errors/NotFound.vue",
+      "resources/js/components/auth/Login.vue",
+      "resources/js/components/auth/Register.vue"
+    ],
+    "css": [
+      "assets/app.179954eb.css"
+    ]
+  },
+  "resources/js/components/errors/NotFound.vue": {
+    "file": "assets/NotFound.4879d119.js",
+    "src": "resources/js/components/errors/NotFound.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/components/auth/Login.vue": {
+    "file": "assets/Login.d0985795.js",
+    "src": "resources/js/components/auth/Login.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "assets": [
+      "assets/login-office.d5ff382f.jpeg",
+      "assets/login-office-dark.0e1a7a62.jpeg"
+    ]
+  },
+  "resources/js/components/auth/Register.vue": {
+    "file": "assets/Register.e223f2ee.js",
+    "src": "resources/js/components/auth/Register.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/app.css": {
+    "file": "assets/app.179954eb.css",
+    "src": "resources/js/app.css"
+  }
+}
