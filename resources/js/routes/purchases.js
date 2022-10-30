@@ -1,4 +1,5 @@
 const PurchasesIndex = () => import('../components/purchases/PurchasesIndex.vue');
+const PurchasesCreate = () => import('../components/purchases/PurchasesCreate.vue');
 
 export const purchaseRoutes = [
     {
@@ -8,9 +9,9 @@ export const purchaseRoutes = [
         meta: { requireAuth: true }
     },
     {
-        name: 'PurchasesIndex',
+        name: 'PurchasesCreate',
         path: '/purchases/create',
-        component: PurchasesIndex,
+        component: PurchasesCreate,
         meta: { requireAuth: true }
     }
 ];

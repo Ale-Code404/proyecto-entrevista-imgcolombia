@@ -1,4 +1,8 @@
 {
+  "resources/assets/img/template/create-account-office.jpeg": {
+    "file": "assets/create-account-office.a36f44e9.jpeg",
+    "src": "resources/assets/img/template/create-account-office.jpeg"
+  },
   "resources/assets/img/template/login-office.jpeg": {
     "file": "assets/login-office.d5ff382f.jpeg",
     "src": "resources/assets/img/template/login-office.jpeg"
@@ -8,20 +12,19 @@
     "src": "resources/assets/img/template/login-office-dark.jpeg"
   },
   "resources/js/app.js": {
-    "file": "assets/app.defadeb3.js",
+    "file": "assets/app.d723fbe6.js",
     "src": "resources/js/app.js",
     "isEntry": true,
     "dynamicImports": [
+      "resources/js/components/purchases/PurchasesIndex.vue",
       "resources/js/components/errors/NotFound.vue",
       "resources/js/components/auth/Login.vue",
-      "resources/js/components/auth/Register.vue"
-    ],
-    "css": [
-      "assets/app.179954eb.css"
+      "resources/js/components/auth/Register.vue",
+      "resources/js/components/Home.vue"
     ]
   },
   "resources/js/components/errors/NotFound.vue": {
-    "file": "assets/NotFound.4879d119.js",
+    "file": "assets/NotFound.411b8496.js",
     "src": "resources/js/components/errors/NotFound.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -29,7 +32,7 @@
     ]
   },
   "resources/js/components/auth/Login.vue": {
-    "file": "assets/Login.d0985795.js",
+    "file": "assets/Login.c18658b2.js",
     "src": "resources/js/components/auth/Login.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -41,15 +44,43 @@
     ]
   },
   "resources/js/components/auth/Register.vue": {
-    "file": "assets/Register.e223f2ee.js",
+    "file": "assets/Register.a17c0d4d.js",
     "src": "resources/js/components/auth/Register.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js"
+    ],
+    "assets": [
+      "assets/create-account-office.a36f44e9.jpeg"
     ]
   },
-  "resources/js/app.css": {
-    "file": "assets/app.179954eb.css",
-    "src": "resources/js/app.css"
+  "resources/js/components/Home.vue": {
+    "file": "assets/Home.9869313e.js",
+    "src": "resources/js/components/Home.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_BaseAppLayout.adb20266.js"
+    ]
+  },
+  "_BaseAppLayout.adb20266.js": {
+    "file": "assets/BaseAppLayout.adb20266.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/components/purchases/PurchasesIndex.vue": {
+    "file": "assets/PurchasesIndex.4bd5623e.js",
+    "src": "resources/js/components/purchases/PurchasesIndex.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_BaseAppLayout.adb20266.js",
+      "resources/js/app.js"
+    ]
+  },
+  "resources/css/app.css": {
+    "file": "assets/app.3b5bb5dc.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
   }
 }

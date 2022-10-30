@@ -1,6 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router';
 import store from '../store';
+
+import { createRouter, createWebHistory } from 'vue-router';
 import { purchaseRoutes } from './purchases';
+import { fromJSON } from 'postcss';
 
 const NotFound = () =>  import('./../components/errors/NotFound.vue');
 const Login = () => import('./../components/auth/Login.vue');
@@ -53,6 +55,10 @@ router.beforeEach(async (to) => {
 
     const requireAuthTo = (to.meta.requireAuth ?? true);
     const isLogged = store.getters['auth/hasToken'];
+
+    if(isLogged && to.name === 'Login'){
+      return { name: 'Home' }
+    }
 
     if(requireAuthTo && !isLogged) {
         return { name: 'Login' }
