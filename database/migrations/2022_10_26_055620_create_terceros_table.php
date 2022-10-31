@@ -15,10 +15,22 @@ return new class extends Migration
     {
         Schema::create('terceros', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre_comercial', 120);
-            $table->string('nit', 12);
+
+            $table->string('nombre_comercial', 120)
+                ->comment('Nombre comercial de la empresa o el tercero');
+
+            $table->foreignId('tipo_identificaciones_id')
+                ->comment('Tipo de identificación del tercero (CC, NIT...)')
+                ->constrained('tipo_identificaciones');
+
+            $table->string('identificacion', 12)
+                ->comment('Número de identificacion del tercero');
+
             $table->char('dv', 1);
-            $table->foreignId('tipo_terceros_id')->references('id')->on('tipo_terceros');
+            $table->foreignId('tipo_terceros_id')
+                ->comment('Tipo de tercero (Client, Proveedor...)')
+                ->constrained('tipo_terceros');
+
             $table->timestamps();
         });
     }

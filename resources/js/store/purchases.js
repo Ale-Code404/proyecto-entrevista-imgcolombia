@@ -1,4 +1,6 @@
 const purchases = {
+  namespaced: true,
+
   state: {
     purchases: [
       {id:1, name:"Oli Bob", progress:12, gender:"male", rating:1, col:"red", dob:"19/02/1984", car:1},
@@ -16,8 +18,20 @@ const purchases = {
       {id:5, name:"Margret Marmajuke", progress:16, gender:"female", rating:5, col:"yellow", dob:"31/01/1999"},
       {id:6, name:"Frank Harbours", progress:38, gender:"male", rating:4, col:"red", dob:"12/05/1966", car:1}
     ],
-    newPurchase: {
 
+    newPurchase: {
+      id: null,
+      factura_prefijo: null,
+      factura_consecutivo: null,
+      proveedor_id: null,
+      cliente_id: null,
+      forma_pago: null,
+      fecha_hora_emision: null,
+      fecha_hora_vencimiento: null,
+      valor_total_base: null,
+      valor_total_impuesto: null,
+      valor_total: null,
+      observacion: null
     }
   },
 

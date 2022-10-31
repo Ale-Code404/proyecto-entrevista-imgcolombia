@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tipo_terceros', function (Blueprint $table) {
+        Schema::create('forma_pagos', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre', 30)->comment('Nombre del tipo de tercero (Cliente, Proveedor...)');
+            $table->string('nombre', 200)->comment('Nombre de la forma de pago (Efectivo, Tranferencia...');
         });
     }
 
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tipo_terceros');
+        Schema::dropIfExists('forma_pagos');
     }
 };

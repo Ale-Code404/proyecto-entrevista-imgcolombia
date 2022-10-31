@@ -1,17 +1,21 @@
 const PurchasesIndex = () => import('../components/purchases/PurchasesIndex.vue');
-const PurchasesCreate = () => import('../components/purchases/PurchasesCreate.vue');
+const PurchasesForm = () => import('../components/purchases/PurchasesForm.vue');
 
 export const purchaseRoutes = [
     {
         name: 'PurchasesIndex',
         path: '/purchases',
-        component: PurchasesIndex,
-        meta: { requireAuth: true }
+        component: PurchasesIndex
     },
     {
         name: 'PurchasesCreate',
         path: '/purchases/create',
-        component: PurchasesCreate,
-        meta: { requireAuth: true }
-    }
+        component: PurchasesForm
+    },
+    {
+      name: 'PurchasesEdit',
+      path: '/purchases/:purchaseId/edit',
+      component: PurchasesForm,
+      props: true
+  }
 ];

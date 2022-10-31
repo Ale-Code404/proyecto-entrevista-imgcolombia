@@ -15,6 +15,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
+            FormaPagosSeeder::class,
+            ImpuestosSeeder::class,
+            TipoIdentificacionesSeeder::class,
             TipoTercerosSeeder::class
         ]);
     }

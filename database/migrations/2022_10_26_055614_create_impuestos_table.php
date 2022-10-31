@@ -13,9 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tipo_terceros', function (Blueprint $table) {
+        Schema::create('impuestos', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre', 30)->comment('Nombre del tipo de tercero (Cliente, Proveedor...)');
+            $table->string('nombre', 30)->comment('Nombre del impuesto');
+            $table->string('nombre_corto', 10)->comment('Nombre corto del impuesto');
+            $table->decimal('porcentaje')->comment('Porcentaje del impuesto')->default(0);
         });
     }
 
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tipo_terceros');
+        Schema::dropIfExists('impuestos');
     }
 };

@@ -14,14 +14,41 @@ return new class extends Migration
     public function up()
     {
         Schema::create('compras_articulos', function (Blueprint $table) {
-            $table->foreignId('compras_id')->constrained();
-            $table->foreignId('articulos_id')->constrained();
+            $table->foreignId('compras_id')->constrained('compras');
+            $table->foreignId('articulos_id')->constrained('articulos');
             $table->primary(['compras_id', 'articulos_id'], 'compras_articulos_id');
-            $table->decimal('cantidad', 15, 2);
-            $table->decimal('valor_base', 15, 2);
-            $table->decimal('valor_impuesto', 15, 2);
-            $table->decimal('valor_unitario', 15, 2);
-            $table->decimal('valor_total', 15, 2);
+
+            $table->tinyInteger('articulo_consecutivo', false, true)
+                ->comment('Numero consecutivo del articulo en la compra (1, 2, 3...)');
+
+            $table->decimal('cantidad', 15, 2)
+                ->comment('Cantidad de articulos adquiridos')
+                ->default(0);
+
+            $table->decimal('valor_unitario_base', 15, 2)
+                ->comment('Valor unitario sin impuestos')
+                ->default(0);
+
+            $table->decimal('valor_unitario_impuesto', 15, 2)
+                ->comment('Valor unitario de impuestos')
+                ->default(0);
+
+            $table->decimal('valor_unitario_total', 15, 2)
+                ->comment('Valor unitario total')
+                ->default(0);
+
+                $table->decimal('valor_total_base', 15, 2)
+                ->comment('Valor total sin impuestos')
+                ->default(0);
+
+            $table->decimal('valor_total_impuesto', 15, 2)
+                ->comment('Valor total de impuestos')
+                ->default(0);
+
+            $table->decimal('valor_total', 15, 2)
+                ->comment('Valor total')
+                ->default(0);
+
             $table->timestamps();
         });
     }

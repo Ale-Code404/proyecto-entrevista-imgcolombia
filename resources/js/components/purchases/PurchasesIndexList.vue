@@ -6,7 +6,6 @@
 
 <script>
 import { mapState } from 'vuex';
-
 import Tabulator from '../../libraries/tabulator';
 
 export default {
@@ -19,9 +18,9 @@ export default {
         data: this.purchases,
         layout: "fitColumns",
         pagination: true,
-        paginationMode: "remote",
-        paginationSize: 50,
-        paginationInitialPage: 2,
+        paginationMode: "local",
+        paginationSize: 10,
+        paginationInitialPage: 1,
         columns: [
           {title: "#", field:"name", width: 30 },
           {title: "Doc. referencia", field:"progress", },
