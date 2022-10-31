@@ -1,8 +1,4 @@
 {
-  "resources/assets/img/template/create-account-office.jpeg": {
-    "file": "assets/create-account-office.a36f44e9.jpeg",
-    "src": "resources/assets/img/template/create-account-office.jpeg"
-  },
   "resources/assets/img/template/login-office.jpeg": {
     "file": "assets/login-office.d5ff382f.jpeg",
     "src": "resources/assets/img/template/login-office.jpeg"
@@ -11,18 +7,22 @@
     "file": "assets/login-office-dark.0e1a7a62.jpeg",
     "src": "resources/assets/img/template/login-office-dark.jpeg"
   },
+  "resources/assets/img/template/create-account-office.jpeg": {
+    "file": "assets/create-account-office.a36f44e9.jpeg",
+    "src": "resources/assets/img/template/create-account-office.jpeg"
+  },
   "resources/scss/app.scss": {
     "file": "assets/app.7c3c19f82.js",
     "src": "resources/scss/app.scss",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app.963f98e1.js",
+    "file": "assets/app.d0639857.js",
     "src": "resources/js/app.js",
     "isEntry": true,
     "dynamicImports": [
       "resources/js/components/purchases/PurchasesIndex.vue",
-      "resources/js/components/purchases/PurchasesCreate.vue",
+      "resources/js/components/purchases/PurchasesForm.vue",
       "resources/js/components/errors/NotFound.vue",
       "resources/js/components/auth/Login.vue",
       "resources/js/components/auth/Register.vue",
@@ -30,7 +30,7 @@
     ]
   },
   "resources/js/components/errors/NotFound.vue": {
-    "file": "assets/NotFound.6d2935d8.js",
+    "file": "assets/NotFound.551c3e53.js",
     "src": "resources/js/components/errors/NotFound.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -38,26 +38,26 @@
     ]
   },
   "resources/js/components/auth/Login.vue": {
-    "file": "assets/Login.9214255d.js",
+    "file": "assets/Login.6b1dc486.js",
     "src": "resources/js/components/auth/Login.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_index.es.ca960905.js"
+      "_index.es.511a7a40.js"
     ],
     "assets": [
       "assets/login-office.d5ff382f.jpeg",
       "assets/login-office-dark.0e1a7a62.jpeg"
     ]
   },
-  "_index.es.ca960905.js": {
-    "file": "assets/index.es.ca960905.js",
+  "_index.es.511a7a40.js": {
+    "file": "assets/index.es.511a7a40.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
   "resources/js/components/auth/Register.vue": {
-    "file": "assets/Register.53f5570f.js",
+    "file": "assets/Register.5bbaeea7.js",
     "src": "resources/js/components/auth/Register.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -68,52 +68,57 @@
     ]
   },
   "resources/js/components/Home.vue": {
-    "file": "assets/Home.05741911.js",
+    "file": "assets/Home.f1df9d45.js",
     "src": "resources/js/components/Home.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_BaseAppLayout.43e36a13.js",
-      "_index.es.ca960905.js"
+      "_BaseAppLayout.5dd6d024.js",
+      "_index.es.511a7a40.js"
     ]
   },
-  "_BaseAppLayout.43e36a13.js": {
-    "file": "assets/BaseAppLayout.43e36a13.js",
+  "_BaseAppLayout.5dd6d024.js": {
+    "file": "assets/BaseAppLayout.5dd6d024.js",
     "imports": [
       "resources/js/app.js",
-      "_index.es.ca960905.js"
+      "_index.es.511a7a40.js"
     ]
   },
   "resources/js/components/purchases/PurchasesIndex.vue": {
-    "file": "assets/PurchasesIndex.7b5bebd0.js",
+    "file": "assets/PurchasesIndex.2a7cb759.js",
     "src": "resources/js/components/purchases/PurchasesIndex.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_BaseAppLayout.43e36a13.js",
+      "_BaseAppLayout.5dd6d024.js",
       "resources/js/app.js",
-      "_index.es.ca960905.js"
-    ],
-    "css": [
-      "assets/PurchasesIndex.5f07e7a5.css"
+      "_tom-select.bootstrap5.min.d7fa17a8.js",
+      "_index.es.511a7a40.js"
     ]
   },
-  "resources/js/components/purchases/PurchasesCreate.vue": {
-    "file": "assets/PurchasesCreate.02881dd2.js",
-    "src": "resources/js/components/purchases/PurchasesCreate.vue",
+  "_tom-select.bootstrap5.min.d7fa17a8.js": {
+    "file": "assets/tom-select.bootstrap5.min.d7fa17a8.js",
+    "css": [
+      "assets/tom-select.bootstrap5.5f07e7a5.css"
+    ]
+  },
+  "resources/js/components/purchases/PurchasesForm.vue": {
+    "file": "assets/PurchasesForm.8d3c4d7b.js",
+    "src": "resources/js/components/purchases/PurchasesForm.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_BaseAppLayout.43e36a13.js",
+      "_tom-select.bootstrap5.min.d7fa17a8.js",
       "resources/js/app.js",
-      "_index.es.ca960905.js"
+      "_BaseAppLayout.5dd6d024.js",
+      "_index.es.511a7a40.js"
     ]
   },
   "resources/css/app.css": {
-    "file": "assets/app.c77f91e0.css",
+    "file": "assets/app.2822a056.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
-  "resources/js/components/purchases/PurchasesIndex.css": {
-    "file": "assets/PurchasesIndex.5f07e7a5.css",
-    "src": "resources/js/components/purchases/PurchasesIndex.css"
+  "tom-select.bootstrap5.css": {
+    "file": "assets/tom-select.bootstrap5.5f07e7a5.css",
+    "src": "tom-select.bootstrap5.css"
   }
 }
